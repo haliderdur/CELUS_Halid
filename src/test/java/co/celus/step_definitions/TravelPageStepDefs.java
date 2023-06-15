@@ -29,6 +29,9 @@ public class TravelPageStepDefs {
 
         for (WebElement eachCardTitle : travelBlogPage.cardTitles) {
             BrowserUtils.waitForVisibilityOf(eachCardTitle);
+            //BrowserUtils.waitForStaleElement(eachCardTitle);
+            BrowserUtils.waitForPresenceOfElement(By.tagName("h5"),100);
+
             if (eachCardTitle.getText().equals(cardName)) {
                 eachCardTitle.click();
                 break;

@@ -30,13 +30,13 @@ public class TravelBlogPage extends BasePage {
     @FindBy(xpath = "//button[@aria-label='delete']")
     public List<WebElement> deleteButtons;
 
-    @FindBy(xpath = "//p[.='CELUS IS COOL AMAZING']/..//following-sibling::footer//button[@aria-label='delete']")
+    @FindBy(xpath = "//p[.='CELUS IS GREAT!!!']/..//following-sibling::footer//button[@aria-label='delete']")
     public WebElement lastCommentDeleteButton;
+
+   @FindBy(xpath = "//p[.='CELUS IS GREAT!!!']")
+   public WebElement celusComment;
 
     @FindBy(xpath = "//button[.='Proceed']")
     public WebElement proceedButton;
-
-    @FindBy(xpath = "//p[.='CELUS IS COOL AMAZING']")
-    public WebElement celusComment;
 
 }
